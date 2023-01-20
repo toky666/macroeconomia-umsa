@@ -1,0 +1,268 @@
+<page-header></page-header>
+
+<div id="panel-table">
+  <mat-card id="card-table">CALCULO PIB</mat-card>
+</div>
+
+
+
+<mat-card class="principal">
+  <div class="unidos">
+    <mat-card class="vistaUsers">
+      <div class="barraAzul"></div>
+      <mat-card-header class="titleHeader">
+        <mat-card-title class="titleFont">Sector Primario</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <p class="titleTable">Empresa Cosechadora</p>
+        <hr />
+
+        <mat-card class="card-table1">Ingresos: {{ this.resultado1 }}</mat-card>
+        <div class="variables">
+          <mat-form-field appearance="outline">
+            <mat-label>{{ longText2 }}</mat-label>
+            <input
+              matInput
+              type="number"
+              [(ngModel)]="this.dato1"
+              class=".example-full-width"
+              (keyup)="sumas()"
+            />
+            <span matTextSuffix>Bs.</span>
+            <!-- <mat-error *ngIf="dataForm.controls['names'].hasError('required')">
+            <strong>{{ 'menu.usuarios.error.names' | translate }}</strong>
+          </mat-error> -->
+          </mat-form-field>
+
+          <mat-form-field appearance="outline">
+            <mat-label>{{ longText3 }}</mat-label>
+            <input
+              matInput
+              type="number"
+              [(ngModel)]="this.dato2"
+              class=".example-full-width"
+              (keyup)="sumas()"
+            />
+            <span matTextSuffix>Bs.</span>
+            <!-- <mat-error *ngIf="dataForm.controls['names'].hasError('required')">
+            <strong>{{ 'menu.usuarios.error.names' | translate }}</strong>
+          </mat-error> -->
+          </mat-form-field>
+
+          <mat-form-field appearance="outline">
+            <mat-label>{{ longText4 }}</mat-label>
+            <input
+              matInput
+              type="number"
+              [(ngModel)]="this.dato3"
+              class=".example-full-width"
+              (keyup)="sumas()"
+            />
+            <span matTextSuffix>Bs.</span>
+            <!-- <mat-error *ngIf="dataForm.controls['names'].hasError('required')">
+            <strong>{{ 'menu.usuarios.error.names' | translate }}</strong>
+          </mat-error> -->
+          </mat-form-field>
+        </div>
+      </mat-card-content>
+    </mat-card>
+
+    <mat-card class="vistaUsers">
+      <div class="barraAzul"></div>
+      <mat-card-header class="titleHeader">
+        <mat-card-title class="titleFont">Sector Secundario</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <p class="titleTable">Empresa Harina</p>
+        <hr />
+        <mat-card class="card-table1">Ingresos: {{ this.resultado2 }}</mat-card>
+        <div class="variables">
+          <mat-form-field appearance="outline">
+            <mat-label>{{ longText5 }}</mat-label>
+            <input
+              matInput
+              type="number"
+              [(ngModel)]="this.resultado1"
+              class=".example-full-width"
+              (keyup)="sumas()"
+              disabled
+            />
+            <span matTextSuffix>Bs.</span>
+            <!-- <mat-error *ngIf="dataForm.controls['names'].hasError('required')">
+            <strong>{{ 'menu.usuarios.error.names' | translate }}</strong>
+          </mat-error> -->
+          </mat-form-field>
+
+          <mat-form-field appearance="outline">
+            <mat-label>{{ longText2 }}</mat-label>
+            <input
+              matInput
+              type="number"
+              [(ngModel)]="this.dato5"
+              class=".example-full-width"
+              (keyup)="sumas()"
+            />
+            <span matTextSuffix>Bs.</span>
+            <!-- <mat-error *ngIf="dataForm.controls['names'].hasError('required')">
+            <strong>{{ 'menu.usuarios.error.names' | translate }}</strong>
+          </mat-error> -->
+          </mat-form-field>
+
+          <mat-form-field appearance="outline">
+            <mat-label>{{ longText3 }}</mat-label>
+            <input
+              matInput
+              type="number"
+              [(ngModel)]="this.dato6"
+              class=".example-full-width"
+              (keyup)="sumas()"
+            />
+            <span matTextSuffix>Bs.</span>
+            <!-- <mat-error *ngIf="dataForm.controls['names'].hasError('required')">
+            <strong>{{ 'menu.usuarios.error.names' | translate }}</strong>
+          </mat-error> -->
+          </mat-form-field>
+
+          <mat-form-field appearance="outline">
+            <mat-label>{{ longText4 }}</mat-label>
+            <input
+              matInput
+              type="number"
+              [(ngModel)]="this.dato7"
+              class=".example-full-width"
+              (keyup)="sumas()"
+            />
+            <span matTextSuffix>Bs.</span>
+            <!-- <mat-error *ngIf="dataForm.controls['names'].hasError('required')">
+            <strong>{{ 'menu.usuarios.error.names' | translate }}</strong>
+          </mat-error> -->
+          </mat-form-field>
+        </div>
+      </mat-card-content>
+    </mat-card>
+
+    <mat-card class="vistaUsers">
+      <div class="barraAzul"></div>
+      <mat-card-header class="titleHeader">
+        <mat-card-title class="titleFont">Sector Terciario</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <p class="titleTable">Empresa Panificadora</p>
+        <hr />
+        <mat-card class="card-table1">Ingresos: {{ this.resultado3 }}</mat-card>
+        <div class="variables">
+          <mat-form-field appearance="outline">
+            <mat-label>{{ longText5 }}</mat-label>
+            <input
+              matInput
+              type="number"
+              [(ngModel)]="this.resultado2"
+              class=".example-full-width"
+              (keyup)="sumas()"
+              disabled
+            />
+            <span matTextSuffix>Bs.</span>
+            <!-- <mat-error *ngIf="dataForm.controls['names'].hasError('required')">
+            <strong>{{ 'menu.usuarios.error.names' | translate }}</strong>
+          </mat-error> -->
+          </mat-form-field>
+
+          <mat-form-field appearance="outline">
+            <mat-label>{{ longText2 }}</mat-label>
+            <input
+              matInput
+              type="number"
+              [(ngModel)]="this.dato9"
+              class=".example-full-width"
+              (keyup)="sumas()"
+            />
+            <span matTextSuffix>Bs.</span>
+            <!-- <mat-error *ngIf="dataForm.controls['names'].hasError('required')">
+            <strong>{{ 'menu.usuarios.error.names' | translate }}</strong>
+          </mat-error> -->
+          </mat-form-field>
+
+          <mat-form-field appearance="outline">
+            <mat-label>{{ longText4 }}</mat-label>
+            <input
+              matInput
+              type="number"
+              [(ngModel)]="this.dato10"
+              class=".example-full-width"
+              (keyup)="sumas()"
+            />
+            <span matTextSuffix>Bs.</span>
+            <!-- <mat-error *ngIf="dataForm.controls['names'].hasError('required')">
+            <strong>{{ 'menu.usuarios.error.names' | translate }}</strong>
+          </mat-error> -->
+          </mat-form-field>
+        </div>
+      </mat-card-content>
+    </mat-card>
+  </div>
+  <div>
+    <mat-card class="vistaUsers1">
+      <div class="barraAzul"></div>
+      <mat-card-content class="sections">
+        <div class="title2">
+          <p class="titleTable">SOLUCION 1: (Metodo De Gasto)</p>
+          <hr />
+          <div class="unidos2">
+            <button
+              mat-icon-button
+              #tooltip="matTooltip"
+              matTooltip="Es el ingreso final de la empresa panificadora"
+              matTooltipPosition="above"
+              id="sobremi"
+            >
+              <mat-icon class="icon10"> info </mat-icon>
+            </button>
+            <mat-card class="TitleResult">
+              <p>PBI = {{ this.resultado3 }}</p>
+            </mat-card>
+          </div>
+        </div>
+        <div class="title2">
+          <p class="titleTable">SOLUCION 2: (Metodo Del Producto)</p>
+          <hr />
+          <div class="titleDato">
+            <mat-card class="vistaUsers2">
+              <p>Empresa Cosechadora</p>
+              <p>Empresa Harinera</p>
+              <p>Empresa Panificadora</p>
+            </mat-card>
+            <mat-card class="vistaUsers3">
+              <p>{{ this.resultado1 }} - 0 = {{ this.total1 }}</p>
+              <p>{{ this.resultado2 }} - {{ this.resultado1 }} = {{ this.total2 }}</p>
+              <p>{{ this.resultado3 }} - {{ this.resultado2 }} = {{ this.total3 }}</p>
+            </mat-card>
+          </div>
+          <div class="unidos2">
+            <mat-card class="TitleResult">
+              <p>PBI = {{ this.totalFinal1 }}</p>
+            </mat-card>
+          </div>
+        </div>
+        <div class="title2">
+          <p class="titleTable">SOLUCION 3: (Suma Del Congreso)</p>
+          <hr />
+          <div class="titleDato">
+            <mat-card class="vistaUsers2">
+              <p>Sueldo y Salarios</p>
+              <p>Beneficios</p>
+              <p>Arrendamientos y Rentas</p>
+            </mat-card>
+            <mat-card class="vistaUsers3">
+              <p>{{ this.dato1 }} + {{ this.dato5 }} + {{ this.dato9 }} = {{ this.total11 }}</p>
+              <p>{{ this.dato3 }} + {{ this.dato7 }} + {{ this.dato10 }} = {{ this.total22 }}</p>
+              <p>{{ this.dato2 }} + {{ this.dato6 }} = {{ this.total33 }}</p>
+            </mat-card>
+          </div>
+          <mat-card class="TitleResult">
+            <p>PBI = {{ this.totalFinal1 }}</p>
+          </mat-card>
+        </div>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</mat-card>

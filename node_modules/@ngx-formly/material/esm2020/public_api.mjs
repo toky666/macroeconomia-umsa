@@ -1,0 +1,5 @@
+/*
+ * Public API Surface of material
+ */
+export * from './lib/ui-material';
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoicHVibGljX2FwaS5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIi4uLy4uLy4uLy4uL3NyYy91aS9tYXRlcmlhbC9zcmMvcHVibGljX2FwaS50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTs7R0FFRztBQUVILGNBQWMsbUJBQW1CLENBQUMiLCJzb3VyY2VzQ29udGVudCI6WyIvKlxuICogUHVibGljIEFQSSBTdXJmYWNlIG9mIG1hdGVyaWFsXG4gKi9cblxuZXhwb3J0ICogZnJvbSAnLi9saWIvdWktbWF0ZXJpYWwnO1xuIl19

@@ -1,0 +1,10 @@
+{
+  "module": "../fesm2015/ngx-formly-material-multicheckbox.mjs",
+  "es2020": "../fesm2020/ngx-formly-material-multicheckbox.mjs",
+  "esm2020": "../esm2020/multicheckbox/ngx-formly-material-multicheckbox.mjs",
+  "fesm2020": "../fesm2020/ngx-formly-material-multicheckbox.mjs",
+  "fesm2015": "../fesm2015/ngx-formly-material-multicheckbox.mjs",
+  "typings": "ngx-formly-material-multicheckbox.d.ts",
+  "sideEffects": false,
+  "name": "@ngx-formly/material/multicheckbox"
+}

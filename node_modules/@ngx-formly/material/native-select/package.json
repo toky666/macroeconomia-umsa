@@ -1,0 +1,10 @@
+{
+  "module": "../fesm2015/ngx-formly-material-native-select.mjs",
+  "es2020": "../fesm2020/ngx-formly-material-native-select.mjs",
+  "esm2020": "../esm2020/native-select/ngx-formly-material-native-select.mjs",
+  "fesm2020": "../fesm2020/ngx-formly-material-native-select.mjs",
+  "fesm2015": "../fesm2015/ngx-formly-material-native-select.mjs",
+  "typings": "ngx-formly-material-native-select.d.ts",
+  "sideEffects": false,
+  "name": "@ngx-formly/material/native-select"
+}

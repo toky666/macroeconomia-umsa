@@ -1,0 +1,243 @@
+@import '../../../../styles/sass/variables';
+@import '../../../../styles/sass/title';
+@import '../../../../styles/sass/mixin';
+@import '../../../../styles/sass/propiedades';
+
+.example-full-width {
+  @include decoration(50%, 14%, small, 5px, 5px);
+
+  input {
+    @include textoMayuscula(uppercase);
+  }
+  .emailInput {
+    @include textoMayuscula(none);
+  }
+}
+
+/////////////////Titulo principal////////////
+
+.principal {
+  top: 20px;
+}
+
+.unidos {
+  display: flex;
+  justify-content: center;
+  margin-top: 72px;
+}
+.unidos2 {
+  align-items: baseline;
+  justify-content: center;
+}
+
+
+
+///////////// Table //////////
+
+.vistaUsers,
+.vistaUsers1 {
+  background-color: $colorBlanco;
+  filter: drop-shadow(0 1px 3px $colorAzul);
+  width: 98%;
+  text-align: center;
+  color: $colorAzul;
+  margin-left: 10px;
+  margin-right: 10px;
+
+  display: block;
+}
+
+.titleHeader {
+  justify-content: right;
+}
+
+.titleFont {
+  font-size: small;
+  color: $colorRojo;
+  font-weight: 600;
+}
+
+.titleTable{
+  color: $colorNegro;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.card-table1{
+  width: 100%;
+  background-color: $colorBlanco;
+  height: 40px;
+  justify-content: center;
+  align-content: flex-start;
+  color: $colorNegro;
+  font-size: 20px;
+  font-weight: 600;
+  filter: drop-shadow(0 1px 3px $colorNegro);
+}
+
+.variables {
+  display: block;
+  width: 100%;
+}
+
+.sections {
+  display: flex;
+  padding-left: 5px;
+  padding-right: 5px;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.title2 {
+  color: $colorNegro;
+  display: block;
+  text-align: center;
+}
+
+.TitleResult {
+  background-color: $colorBlanco;
+  filter: drop-shadow(0 1px 3px $colorNegro);
+  width: 100px;
+  display: inline-flex;
+  color: $colorNegro;
+  font-weight: bold;
+  filter: drop-shadow(0 1px 3px $colorNegro);
+}
+
+.vistaUsers2 {
+  background-color: $colorBlanco;
+  filter: drop-shadow(0 1px 3px $colorNegro);
+  width: 200px;
+  text-align: left;
+  color: $colorNegro;
+  margin-left: 10px;
+  display: block;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+.vistaUsers3 {
+  background-color: $colorBlanco;
+  filter: drop-shadow(0 1px 3px $colorNegro);
+  width: 155px;
+  text-align: center;
+  color: $colorNegro;
+  margin-left: 10px;
+  display: block;
+}
+
+.titleDato {
+  display: flex;
+}
+
+// .afectado {
+//   width: 100%;
+//   background-color: #460000;
+//   height: 40px;
+//   justify-content: center;
+//   align-content: flex-start;
+//   color: #fff;
+//   font-size: 20px;
+//   font-weight: 600;
+//   filter: drop-shadow(0 1px 3px $colorNegro);
+// }
+
+// .afectado2 {
+//   background: blue;
+// }
+.sobremi {
+  display: inline;
+  left: 124px;
+  z-index: 200;
+}
+// propiedades de tooltip
+::ng-deep .mat-tooltip {
+  color: $colorNegro !important;
+  background-color: $colorBlanco !important;
+  text-align: center !important;
+  filter: drop-shadow(0 1px 3px $colorNegro) !important;
+}
+// fin tooltip
+
+@media screen and (max-width: 320px) {
+  .card-table {
+    font-size: 15px;
+    font-weight: 700;
+  }
+  .unidos {
+    display: block;
+  }
+  .vistaUsers {
+    width: 93%;
+  }
+  .sections {
+    display: block;
+  }
+  .vistaUsers2,
+  .vistaUsers3 {
+    font-size: 12px;
+    width: 200px;
+    display: grid;
+    align-content: space-around;
+  }
+  .titleTable {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .card-table {
+    font-size: 15px;
+    font-weight: 700;
+  }
+  .unidos {
+    display: block;
+  }
+  .vistaUsers {
+    width: 93%;
+  }
+  .sections {
+    display: block;
+  }
+  .vistaUsers2,
+  .vistaUsers3 {
+    display: flex;
+  }
+  .titleTable {
+    font-size: 20px;
+  }
+  .titleDato {
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 767px) {
+  .card-table {
+    font-size: 15px;
+    font-weight: 700;
+  }
+  .unidos {
+    display: block;
+  }
+  .vistaUsers {
+    width: 97%;
+  }
+  .sections {
+    display: block;
+  }
+  .vistaUsers2,
+  .vistaUsers3 {
+    display: flex;
+  }
+  .titleTable {
+    font-size: 20px;
+  }
+  .titleDato {
+    justify-content: center;
+  }
+  .variables {
+    display: grid;
+  }
+  .vistaUsers1 {
+    width: 97%;
+  }
+}
+@media screen and (min-width: 992px) {
+}

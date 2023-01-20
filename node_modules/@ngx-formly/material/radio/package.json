@@ -1,0 +1,10 @@
+{
+  "module": "../fesm2015/ngx-formly-material-radio.mjs",
+  "es2020": "../fesm2020/ngx-formly-material-radio.mjs",
+  "esm2020": "../esm2020/radio/ngx-formly-material-radio.mjs",
+  "fesm2020": "../fesm2020/ngx-formly-material-radio.mjs",
+  "fesm2015": "../fesm2015/ngx-formly-material-radio.mjs",
+  "typings": "ngx-formly-material-radio.d.ts",
+  "sideEffects": false,
+  "name": "@ngx-formly/material/radio"
+}

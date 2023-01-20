@@ -1,0 +1,16 @@
+@mixin decoration($ancho, $alto, $tamano, $pxright, $pxleft) {
+  width: $ancho;
+  height: $alto;
+  font-size: $tamano;
+  padding-right: $pxright;
+  padding-left: $pxleft;
+  color: $colorAzul;
+}
+
+@mixin textoMayuscula($texto) {
+  text-transform: $texto;
+}
+
+::ng-deep .mat-form-field-appearance-outline .mat-form-field-outline {
+  background-color: $colorBlanco !important;
+}

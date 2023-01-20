@@ -1,0 +1,201 @@
+@import '../../../../styles/sass/variables';
+@import '../../../../styles/sass/title';
+@import '../../../../styles/sass/mixin';
+@import '../../../../styles/sass/propiedades';
+
+.example-full-width {
+  @include decoration(50%, 14%, small, 5px, 5px);
+
+  input {
+    @include textoMayuscula(uppercase);
+  }
+  .emailInput {
+    @include textoMayuscula(none);
+  }
+}
+
+/////////////////Titulo principal////////////
+
+.principal {
+  top: 20px;
+}
+
+///////////// Table //////////
+
+.unidos {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  color: $colorNegro;
+}
+.variables {
+  display: table-cell;
+  width: 50%;
+}
+.card-table1 {
+  width: 100%;
+  background-color: $colorBlanco;
+  height: 40px;
+  justify-content: center;
+  align-content: flex-start;
+  color: $colorNegro;
+  font-size: 14px;
+  font-weight: 600;
+  filter: drop-shadow(0 1px 3px $colorNegro);
+  margin-top: 20px
+}
+#card-table2 {
+  width: 100%;
+  background-color: $colorBlanco;
+  height: 90px;
+  margin-top: -20px !important;
+  margin-bottom: 20px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  align-content: flex-start;
+  display: flex !important;
+  color: $colorNegro;
+  font-size: 20px;
+  font-weight: 700;
+  top: 20px;
+  filter: drop-shadow(0 1px 3px $colorNegro);
+}
+.titleTable {
+  color: $colorRojo;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.vistaUsers3{
+      filter: drop-shadow(0 1px 3px #000);
+      margin-left: 10px;
+      display: flex;
+      width: 98%;
+      margin-top: 73px;
+      justify-content: center;
+      text-align: left;
+      padding: 20px;
+}
+
+.vistaUsers,
+.vistaUsers1 {
+  background-color: $colorBlanco;
+  filter: drop-shadow(0 1px 3px $colorAzul);
+  width: 98%;
+  text-align: center;
+  color: $colorAzul;
+  margin-left: 10px;
+  margin-right: 10px;
+  display: block;
+}
+
+.vistaUsers1{
+  top: 25px;
+}
+.rowTotal {
+  background-color: #05193e;
+  color: $colorBlanco;
+}
+.rowFinal {
+  background-color: $colorBlanco;
+  color: $colorNegro;
+}
+.rowTop{
+  height: 60px;
+  background: #05193e;
+}
+.rowFinal1 {
+  color: #f3db07;
+  font-size: 14px;
+  font-weight: 700;
+  background: #05193e;
+}
+
+.TitleResult {
+  background-color: $colorBlanco;
+  filter: drop-shadow(0 1px 3px $colorNegro);
+  width: 170px;
+  display: inline-flex;
+  color: $colorNegro;
+  font-weight: bold;
+  filter: drop-shadow(0 1px 3px $colorNegro);
+}
+
+.vistaUsers2 {
+  background-color: $colorBlanco;
+  filter: drop-shadow(0 1px 3px $colorNegro);
+  width: 200px;
+  text-align: center;
+  color: $colorNegro;
+  margin-left: 10px;
+  display: contents;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+.title3 {
+  color: #000;
+  font-size: 14px;
+  text-align: left;
+  margin-left: 14px;
+}
+.titleDato {
+  display: block;
+}
+.rowFinal3 {
+  color: $colorRojo;
+}
+.icon1 {
+  color: #fcfcfc;
+  font-size: 20px;
+  display: inline-flex;
+}
+.afectadoFinal1 {
+  background-color: #88077d;
+  color: #fff !important;
+}
+.afectadoFinal2 {
+  background-color: #a80606;
+  color: #fff !important;
+}
+@media screen and (max-width: 320px) {
+  .unidos {
+    display: grid;
+  }
+  .vistaUsers {
+    width: 93%;
+  }
+  .example-full-width {
+    @include decoration(100%, 14%, small, 5px, 5px);
+  }
+}
+@media screen and (max-width: 576px) {
+  .unidos {
+    display: grid;
+  }
+  .vistaUsers {
+    width: 93%;
+  }
+  .example-full-width {
+    @include decoration(100%, 14%, small, 5px, 5px);
+  }
+}
+@media screen and (max-width: 767px) {
+  .unidos {
+    display: grid;
+  }
+  .vistaUsers {
+    width: 97%;
+  }
+  .example-full-width {
+    @include decoration(100%, 14%, small, 5px, 5px);
+  }
+}
+@media screen and (min-width: 992px) {
+  .table {
+    width: 100% !important;
+  }
+  .example-full-width {
+    @include decoration(100%, 14%, small, 5px, 5px);
+  }
+}

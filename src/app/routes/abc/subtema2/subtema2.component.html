@@ -1,0 +1,719 @@
+<page-header></page-header>
+<div id="panel-table">
+  <mat-card id="card-table">CALCULO DE INSUMO PRODUCTO</mat-card>
+</div>
+
+<mat-card class="principal">
+  <div class="unidos">
+    <mat-card class="vistaUsers">
+      <div class="barraAzul"></div>
+      <mat-card-content>
+        <p class="titleTable">SECTOR PRIMARIO</p>
+        <hr />
+
+        <mat-card class="card-table1"> {{ longTitle1 }}: {{ this.resultado1 }} </mat-card>
+        <div class="variables">
+          <mat-form-field appearance="outline">
+            <mat-label>{{ longText1 }}</mat-label>
+            <input
+              matInput
+              type="number"
+              [(ngModel)]="this.dato1"
+              class=".example-full-width"
+              (keyup)="sumas()"
+            />
+            <span matTextSuffix>Bs.</span>
+            <!-- <mat-error *ngIf="dataForm.controls['names'].hasError('required')">
+            <strong>{{ 'menu.usuarios.error.names' | translate }}</strong>
+          </mat-error> -->
+          </mat-form-field>
+
+          <mat-form-field appearance="outline">
+            <mat-label>{{ longText2 }}</mat-label>
+            <input
+              matInput
+              type="number"
+              [(ngModel)]="this.dato2"
+              class=".example-full-width"
+              (keyup)="sumas()"
+            />
+            <span matTextSuffix>Bs.</span>
+            <!-- <mat-error *ngIf="dataForm.controls['names'].hasError('required')">
+            <strong>{{ 'menu.usuarios.error.names' | translate }}</strong>
+          </mat-error> -->
+          </mat-form-field>
+
+          <mat-form-field appearance="outline">
+            <mat-label>{{ longText3 }}</mat-label>
+            <input
+              matInput
+              type="number"
+              [(ngModel)]="this.dato3"
+              class=".example-full-width"
+              (keyup)="sumas()"
+            />
+            <span matTextSuffix>Bs.</span>
+            <!-- <mat-error *ngIf="dataForm.controls['names'].hasError('required')">
+            <strong>{{ 'menu.usuarios.error.names' | translate }}</strong>
+          </mat-error> -->
+          </mat-form-field>
+        </div>
+
+        <mat-card class="card-table1"> {{ longTitle2 }}: {{ this.resultado2 }} </mat-card>
+        <div class="variables">
+          <mat-form-field appearance="outline">
+            <mat-label>{{ longText4 }}</mat-label>
+            <input
+              matInput
+              type="number"
+              [(ngModel)]="this.dato4"
+              class=".example-full-width"
+              (keyup)="sumas()"
+            />
+            <span matTextSuffix>Bs.</span>
+            <!-- <mat-error *ngIf="dataForm.controls['names'].hasError('required')">
+            <strong>{{ 'menu.usuarios.error.names' | translate }}</strong>
+          </mat-error> -->
+          </mat-form-field>
+
+          <mat-form-field appearance="outline">
+            <mat-label>{{ longText5 }}</mat-label>
+            <input
+              matInput
+              type="number"
+              [(ngModel)]="this.dato5"
+              class=".example-full-width"
+              (keyup)="sumas()"
+            />
+            <span matTextSuffix>Bs.</span>
+            <!-- <mat-error *ngIf="dataForm.controls['names'].hasError('required')">
+            <strong>{{ 'menu.usuarios.error.names' | translate }}</strong>
+          </mat-error> -->
+          </mat-form-field>
+
+          <mat-form-field appearance="outline">
+            <mat-label>{{ longText6 }}</mat-label>
+            <input
+              matInput
+              type="number"
+              [(ngModel)]="this.dato6"
+              class=".example-full-width"
+              (keyup)="sumas()"
+            />
+            <span matTextSuffix>Bs.</span>
+            <!-- <mat-error *ngIf="dataForm.controls['names'].hasError('required')">
+            <strong>{{ 'menu.usuarios.error.names' | translate }}</strong>
+          </mat-error> -->
+          </mat-form-field>
+
+          <mat-form-field appearance="outline">
+            <mat-label>{{ longText7 }}</mat-label>
+            <input
+              matInput
+              type="number"
+              [(ngModel)]="this.dato7"
+              class=".example-full-width"
+              (keyup)="sumas()"
+            />
+            <span matTextSuffix>Bs.</span>
+            <!-- <mat-error *ngIf="dataForm.controls['names'].hasError('required')">
+            <strong>{{ 'menu.usuarios.error.names' | translate }}</strong>
+          </mat-error> -->
+          </mat-form-field>
+        </div>
+
+        <mat-card class="card-table1"> {{ longTitle3 }}: {{ this.resultado3 }} </mat-card>
+        <div class="variables">
+          <mat-form-field appearance="outline">
+            <mat-label>{{ longText8 }}</mat-label>
+            <input
+              matInput
+              type="number"
+              [(ngModel)]="this.dato8"
+              class=".example-full-width"
+              (keyup)="sumas()"
+            />
+            <span matTextSuffix>Bs.</span>
+            <!-- <mat-error *ngIf="dataForm.controls['names'].hasError('required')">
+            <strong>{{ 'menu.usuarios.error.names' | translate }}</strong>
+          </mat-error> -->
+          </mat-form-field>
+        </div>
+      </mat-card-content>
+    </mat-card>
+
+    <mat-card class="vistaUsers">
+      <div class="barraAzul"></div>
+      <mat-card-content>
+        <p class="titleTable">SECTOR SECUNDARIO</p>
+        <hr />
+
+        <mat-card class="card-table1"> {{ longTitle1 }}: {{ this.resultado4 }} </mat-card>
+        <div class="variables">
+          <mat-form-field appearance="outline">
+            <mat-label>{{ longText9 }}</mat-label>
+            <input
+              matInput
+              type="number"
+              [(ngModel)]="this.dato9"
+              class=".example-full-width"
+              (keyup)="sumas()"
+            />
+            <span matTextSuffix>Bs.</span>
+            <!-- <mat-error *ngIf="dataForm.controls['names'].hasError('required')">
+            <strong>{{ 'menu.usuarios.error.names' | translate }}</strong>
+          </mat-error> -->
+          </mat-form-field>
+
+          <mat-form-field appearance="outline">
+            <mat-label>{{ longText10 }}</mat-label>
+            <input
+              matInput
+              type="number"
+              [(ngModel)]="this.dato10"
+              class=".example-full-width"
+              (keyup)="sumas()"
+            />
+            <span matTextSuffix>Bs.</span>
+            <!-- <mat-error *ngIf="dataForm.controls['names'].hasError('required')">
+            <strong>{{ 'menu.usuarios.error.names' | translate }}</strong>
+          </mat-error> -->
+          </mat-form-field>
+
+          <mat-form-field appearance="outline">
+            <mat-label>{{ longText11 }}</mat-label>
+            <input
+              matInput
+              type="number"
+              [(ngModel)]="this.dato11"
+              class=".example-full-width"
+              (keyup)="sumas()"
+            />
+            <span matTextSuffix>Bs.</span>
+            <!-- <mat-error *ngIf="dataForm.controls['names'].hasError('required')">
+            <strong>{{ 'menu.usuarios.error.names' | translate }}</strong>
+          </mat-error> -->
+          </mat-form-field>
+        </div>
+
+        <mat-card class="card-table1"> {{ longTitle2 }}: {{ this.resultado5 }} </mat-card>
+        <div class="variables">
+          <mat-form-field appearance="outline">
+            <mat-label>{{ longText4 }}</mat-label>
+            <input
+              matInput
+              type="number"
+              [(ngModel)]="this.dato12"
+              class=".example-full-width"
+              (keyup)="sumas()"
+            />
+            <span matTextSuffix>Bs.</span>
+            <!-- <mat-error *ngIf="dataForm.controls['names'].hasError('required')">
+            <strong>{{ 'menu.usuarios.error.names' | translate }}</strong>
+          </mat-error> -->
+          </mat-form-field>
+
+          <mat-form-field appearance="outline">
+            <mat-label>{{ longText5 }}</mat-label>
+            <input
+              matInput
+              type="number"
+              [(ngModel)]="this.dato13"
+              class=".example-full-width"
+              (keyup)="sumas()"
+            />
+            <span matTextSuffix>Bs.</span>
+            <!-- <mat-error *ngIf="dataFrm.controls['names'].hasError('required')">
+            <strong>{{ 'menu.usuarios.error.names' | translate }}</strong>
+          </mat-error> -->
+          </mat-form-field>
+
+          <mat-form-field appearance="outline">
+            <mat-label>{{ longText6 }}</mat-label>
+            <input
+              matInput
+              type="number"
+              [(ngModel)]="this.dato14"
+              class=".example-full-width"
+              (keyup)="sumas()"
+            />
+            <span matTextSuffix>Bs.</span>
+            <!-- <mat-error *ngIf="dataForm.controls['names'].hasError('required')">
+            <strong>{{ 'menu.usuarios.error.names' | translate }}</strong>
+          </mat-error> -->
+          </mat-form-field>
+
+          <mat-form-field appearance="outline">
+            <mat-label>{{ longText7 }}</mat-label>
+            <input
+              matInput
+              type="number"
+              [(ngModel)]="this.dato15"
+              class=".example-full-width"
+              (keyup)="sumas()"
+            />
+            <span matTextSuffix>Bs.</span>
+            <!-- <mat-error *ngIf="dataForm.controls['names'].hasError('required')">
+            <strong>{{ 'menu.usuarios.error.names' | translate }}</strong>
+          </mat-error> -->
+          </mat-form-field>
+        </div>
+
+        <mat-card class="card-table1"> {{ longTitle3 }}: {{ this.resultado6 }} </mat-card>
+        <div class="variables">
+          <mat-form-field appearance="outline">
+            <mat-label>{{ longText12 }}</mat-label>
+            <input
+              matInput
+              type="number"
+              [(ngModel)]="this.dato16"
+              class=".example-full-width"
+              (keyup)="sumas()"
+            />
+            <span matTextSuffix>Bs.</span>
+            <!-- <mat-error *ngIf="dataForm.controls['names'].hasError('required')">
+            <strong>{{ 'menu.usuarios.error.names' | translate }}</strong>
+          </mat-error> -->
+          </mat-form-field>
+          <mat-form-field appearance="outline">
+            <mat-label>{{ longText8 }}</mat-label>
+            <input
+              matInput
+              type="number"
+              [(ngModel)]="this.dato17"
+              class=".example-full-width"
+              (keyup)="sumas()"
+            />
+            <span matTextSuffix>Bs.</span>
+            <!-- <mat-error *ngIf="dataForm.controls['names'].hasError('required')">
+            <strong>{{ 'menu.usuarios.error.names' | translate }}</strong>
+          </mat-error> -->
+          </mat-form-field>
+        </div>
+      </mat-card-content>
+    </mat-card>
+
+    <mat-card class="vistaUsers">
+      <div class="barraAzul"></div>
+      <mat-card-content>
+        <p class="titleTable">SECTOR TERCIARIO</p>
+        <hr />
+
+        <mat-card class="card-table1"> {{ longTitle1 }}: {{ this.resultado7 }} </mat-card>
+        <div class="variables">
+          <mat-form-field appearance="outline">
+            <mat-label>{{ longText10 }}</mat-label>
+            <input
+              matInput
+              type="number"
+              [(ngModel)]="this.dato18"
+              class=".example-full-width"
+              (keyup)="sumas()"
+            />
+            <span matTextSuffix>Bs.</span>
+            <!-- <mat-error *ngIf="dataForm.controls['names'].hasError('required')">
+            <strong>{{ 'menu.usuarios.error.names' | translate }}</strong>
+          </mat-error> -->
+          </mat-form-field>
+
+          <mat-form-field appearance="outline">
+            <mat-label>{{ longText13 }}</mat-label>
+            <input
+              matInput
+              type="number"
+              [(ngModel)]="this.dato19"
+              class=".example-full-width"
+              (keyup)="sumas()"
+            />
+            <span matTextSuffix>Bs.</span>
+            <!-- <mat-error *ngIf="dataForm.controls['names'].hasError('required')">
+            <strong>{{ 'menu.usuarios.error.names' | translate }}</strong>
+          </mat-error> -->
+          </mat-form-field>
+        </div>
+
+        <mat-card class="card-table1"> {{ longTitle2 }}: {{ this.resultado8 }} </mat-card>
+        <div class="variables">
+          <mat-form-field appearance="outline">
+            <mat-label>{{ longText4 }}</mat-label>
+            <input
+              matInput
+              type="number"
+              [(ngModel)]="this.dato20"
+              class=".example-full-width"
+              (keyup)="sumas()"
+            />
+            <span matTextSuffix>Bs.</span>
+            <!-- <mat-error *ngIf="dataForm.controls['names'].hasError('required')">
+            <strong>{{ 'menu.usuarios.error.names' | translate }}</strong>
+          </mat-error> -->
+          </mat-form-field>
+
+          <mat-form-field appearance="outline">
+            <mat-label>{{ longText5 }}</mat-label>
+            <input
+              matInput
+              type="number"
+              [(ngModel)]="this.dato21"
+              class=".example-full-width"
+              (keyup)="sumas()"
+            />
+            <span matTextSuffix>Bs.</span>
+            <!-- <mat-error *ngIf="dataForm.controls['names'].hasError('required')">
+            <strong>{{ 'menu.usuarios.error.names' | translate }}</strong>
+          </mat-error> -->
+          </mat-form-field>
+
+          <mat-form-field appearance="outline">
+            <mat-label>{{ longText6 }}</mat-label>
+            <input
+              matInput
+              type="number"
+              [(ngModel)]="this.dato22"
+              class=".example-full-width"
+              (keyup)="sumas()"
+            />
+            <span matTextSuffix>Bs.</span>
+            <!-- <mat-error *ngIf="dataForm.controls['names'].hasError('required')">
+            <strong>{{ 'menu.usuarios.error.names' | translate }}</strong>
+          </mat-error> -->
+          </mat-form-field>
+
+          <mat-form-field appearance="outline">
+            <mat-label>{{ longText7 }}</mat-label>
+            <input
+              matInput
+              type="number"
+              [(ngModel)]="this.dato23"
+              class=".example-full-width"
+              (keyup)="sumas()"
+            />
+            <span matTextSuffix>Bs.</span>
+            <!-- <mat-error *ngIf="dataForm.controls['names'].hasError('required')">
+            <strong>{{ 'menu.usuarios.error.names' | translate }}</strong>
+          </mat-error> -->
+          </mat-form-field>
+        </div>
+
+        <mat-card class="card-table1"> {{ longTitle3 }}: {{ this.resultado9 }} </mat-card>
+        <div class="variables">
+          <mat-form-field appearance="outline">
+            <mat-label>{{ longText8 }}</mat-label>
+            <input
+              matInput
+              type="number"
+              [(ngModel)]="this.dato24"
+              class=".example-full-width"
+              (keyup)="sumas()"
+            />
+            <span matTextSuffix>Bs.</span>
+            <!-- <mat-error *ngIf="dataForm.controls['names'].hasError('required')">
+            <strong>{{ 'menu.usuarios.error.names' | translate }}</strong>
+          </mat-error> -->
+          </mat-form-field>
+        </div>
+      </mat-card-content>
+    </mat-card>
+  </div>
+  <div id="panel-table">
+    <mat-card id="card-table2">CUADRO DE INSUMO PRODUCTO</mat-card>
+  </div>
+  <div>
+    <mat-card class="vistaUsers1">
+      <div class="table-responsive">
+        <table class="table">
+          <thead>
+            <tr>
+              <td colspan="11" scope="row" class="rowTop"></td>
+            </tr>
+            <tr>
+              <td colspan="5" scope="row" class="rowFinal1">DEMANDA INTERMEDIA</td>
+              <td colspan="4" scope="row" class="rowFinal1">DEMANDA FINAL</td>
+              <td colspan="2" scope="row" scope="row" class="rowFinal1"></td>
+            </tr>
+            <tr>
+              <td colspan="6" scope="row" class="rowFinal1"></td>
+              <td colspan="3" scope="row" class="rowFinal1">Compras de Bienes de Capital</td>
+              <td colspan="2" scope="row" class="rowFinal1"></td>
+            </tr>
+            <tr>
+              <th scope="col" class="rowTotal"></th>
+              <th scope="col" class="rowTotal">Compras y Pagos S1</th>
+              <th scope="col" class="rowTotal">Compras y Pagos S2</th>
+              <th scope="col" class="rowTotal">Compras y Pagos S3</th>
+              <th scope="col" class="rowTotal">Total de Vtas Intermedias</th>
+
+              <th scope="col" class="rowTotal">Compras de las Familias</th>
+              <th scope="col" class="rowTotal">Compras de Bienes de Capital S1</th>
+              <th scope="col" class="rowTotal">Compras de Bienes de Capital S2</th>
+              <th scope="col" class="rowTotal">Compras de Bienes de Capital S3</th>
+              <th scope="col" class="rowTotal">Total Ventas Finales</th>
+              <th scope="col" class="rowTotal">Ventas Totales (VBP)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row" class="rowTotal">1 Vtas. S1</th>
+              <td id="afectado">{{ this.dato1 }}</td>
+              <td id="afectado1">{{ this.dato9 }}</td>
+              <td id="afectado2">0</td>
+              <td id="afectado12">{{ this.total1 }}
+                <mat-icon #tooltip="matTooltip"
+                matTooltip="Es la suma total de la fila 1 Vtas. S1"
+                matTooltipPosition="above"
+                id="sobremi"class="icon11"> info </mat-icon>
+            </td>
+              <td id="afectado43">{{ this.total11 }}<mat-icon #tooltip="matTooltip"
+                matTooltip="Es la resta de Ventas Finales menos Compras Bienes de Capital "
+                matTooltipPosition="above"
+                id="sobremi19"class="icon16"> info </mat-icon></td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td id="afectado40">{{ this.total44 }}<mat-icon #tooltip="matTooltip"
+                matTooltip="Es la resta de Ventas Totales menos Total Ventas Intermedias {{ this.resultado3}} - {{ this.total1 }}"
+                matTooltipPosition="above"
+                id="sobremi16"class="icon15"> info </mat-icon></td>
+              <td id="afectado37">{{ this.resultado3 }}</td>
+            </tr>
+            <tr>
+              <th scope="row" class="rowTotal">2 Vtas. S2</th>
+              <td id="afectado3">{{ this.dato2 }}</td>
+              <td id="afectado4">{{ this.dato10 }}</td>
+              <td id="afectado5">{{ this.dato18 }}</td>
+              <td id="afectado13">{{ this.total2 }}<mat-icon #tooltip="matTooltip"
+                matTooltip="Es la suma total de la fila 2 Vtas. S2"
+                matTooltipPosition="above"
+                id="sobremi1"class="icon11"> info </mat-icon></td>
+
+              <td id="afectado44">{{ this.total22 }}<mat-icon #tooltip="matTooltip"
+                matTooltip="Es la resta de Ventas Finales menos Compras Bienes de Capital {{ this.total55 }} - {{ this.dato24 }} - {{ this.dato17 }} - {{ this.dato8 }}"
+                matTooltipPosition="above"
+                id="sobremi20"class="icon16"> info </mat-icon></td>
+              <td id="afectado34">{{ this.dato8 }}</td>
+              <td id="afectado35">{{ this.dato17 }}</td>
+              <td id="afectado36">{{ this.dato24 }}</td>
+              <td id="afectado41">{{ this.total55 }} <mat-icon #tooltip="matTooltip"
+                matTooltip="Es la resta de Ventas Totales menos Total Ventas Intermedias {{ this.resultado6}} - {{ this.total2 }}"
+                matTooltipPosition="above"
+                id="sobremi17"class="icon15"> info </mat-icon></td>
+              <td id="afectado38">{{ this.resultado6 }}</td>
+            </tr>
+            <tr>
+              <th scope="row" class="rowTotal">3 Vtas. S3</th>
+              <td id="afectado6">{{ this.dato3 }}</td>
+              <td id="afectado7">{{ this.dato11 }}</td>
+              <td id="afectado8">{{ this.dato19 }}</td>
+              <td id="afectado14">{{ this.total3 }}<mat-icon #tooltip="matTooltip"
+                matTooltip="Es la suma total de la fila 3 Vtas. S3"
+                matTooltipPosition="above"
+                id="sobremi2"class="icon11"> info </mat-icon></td>
+              <td id="afectado45">{{ this.total33 }}<mat-icon #tooltip="matTooltip"
+                matTooltip="Es la resta de Ventas Finales menos Compras Bienes de Capital"
+                matTooltipPosition="above"
+                id="sobremi21"class="icon16"> info </mat-icon></td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td id="afectado42">{{ this.total66 }}<mat-icon #tooltip="matTooltip"
+                matTooltip="Es la resta de Ventas Totales menos Total Ventas Intermedias {{ this.resultado9}} - {{ this.total3 }}"
+                matTooltipPosition="above"
+                id="sobremi18"class="icon15"> info </mat-icon></td>
+              <td id="afectado39">{{ this.resultado9 }}</td>
+            </tr>
+            <tr class="rowTotal">
+              <th scope="row">Total Compras Intermedias</th>
+              <td id="afectado9">{{ this.resultado1 }}<mat-icon #tooltip="matTooltip"
+                matTooltip="Es la suma total de Compras y Pagos S1"
+                matTooltipPosition="below"
+                id="sobremi3"class="icon12"> info </mat-icon></td>
+              <td id="afectado10">{{ this.resultado4 }}<mat-icon #tooltip="matTooltip"
+                matTooltip="Es la suma total de Compras y Pagos S2"
+                matTooltipPosition="below"
+                id="sobremi4"class="icon12"> info </mat-icon></td>
+              <td id="afectado11">{{ this.resultado7 }}<mat-icon #tooltip="matTooltip"
+                matTooltip="Es la suma total de Compras y Pagos S3"
+                matTooltipPosition="below"
+                id="sobremi5"class="icon12"> info </mat-icon></td>
+              <td>{{ this.total4 }}<mat-icon #tooltip="matTooltip"
+                matTooltip="Es la suma total de Compras y Ventas Intermedias"
+                matTooltipPosition="below"
+                id="sobremi6"class="icon13"> info </mat-icon></td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+            </tr>
+            <tr>
+              <th scope="row" class="rowTotal">Salarios</th>
+              <td id="afectado15">{{ this.dato4 }}</td>
+              <td id="afectado16">{{ this.dato12 }}</td>
+              <td id="afectado17">{{ this.dato20 }}</td>
+              <td id="afectado30">{{ this.total5 }}<mat-icon #tooltip="matTooltip"
+                matTooltip="Es la suma total de Salarios"
+                matTooltipPosition="above"
+                id="sobremi7"class="icon14"> info </mat-icon></td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+            </tr>
+            <tr>
+              <th scope="row" class="rowTotal">Rentas</th>
+              <td id="afectado18">{{ this.dato5 }}</td>
+              <td id="afectado19">{{ this.dato13 }}</td>
+              <td id="afectado20">{{ this.dato21 }}</td>
+              <td id="afectado31">{{ this.total6 }}<mat-icon #tooltip="matTooltip"
+                matTooltip="Es la suma total de las Rentas"
+                matTooltipPosition="above"
+                id="sobremi8"class="icon14"> info </mat-icon></td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+            </tr>
+            <tr>
+              <th scope="row" class="rowTotal">Renta del Capital</th>
+              <td id="afectado21">{{ this.dato6 }}</td>
+              <td id="afectado22">{{ this.dato14 }}</td>
+              <td id="afectado23">{{ this.dato22 }}</td>
+              <td id="afectado32">{{ this.total7 }}<mat-icon #tooltip="matTooltip"
+                matTooltip="Es la suma total de Renta de Capital"
+                matTooltipPosition="above"
+                id="sobremi9"class="icon14"> info </mat-icon></td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+            </tr>
+            <tr>
+              <th scope="row" class="rowTotal">Beneficios Extraordinarios</th>
+              <td id="afectado24">{{ this.dato7 }}</td>
+              <td id="afectado25">{{ this.dato15 }}</td>
+              <td id="afectado26">{{ this.dato23 }}</td>
+              <td id="afectado33">{{ this.total8 }}<mat-icon #tooltip="matTooltip"
+                matTooltip="Es la suma total de Beneficios Extraordinarios"
+                matTooltipPosition="above"
+                id="sobremi10"class="icon14"> info </mat-icon></td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+            </tr>
+            <tr class="rowTotal">
+              <th scope="row">Valor Agregado</th>
+              <td id="afectado27">{{ this.resultado2 }}<mat-icon #tooltip="matTooltip"
+                matTooltip="Es la suma total de Compras y Pagos de S1"
+                matTooltipPosition="below"
+                id="sobremi11"class="icon12"> info </mat-icon></td>
+              <td id="afectado28">{{ this.resultado5 }}<mat-icon #tooltip="matTooltip"
+                matTooltip="Es la suma total de Compras y Pagos de S2"
+                matTooltipPosition="below"
+                id="sobremi12"class="icon12"> info </mat-icon></td>
+              <td id="afectado29">{{ this.resultado8 }}<mat-icon #tooltip="matTooltip"
+                matTooltip="Es la suma total de Compras y Pagos de S3"
+                matTooltipPosition="below"
+                id="sobremi13"class="icon12"> info </mat-icon></td>
+              <td>{{ this.total9 }}<mat-icon #tooltip="matTooltip"
+                matTooltip="Es la suma total del Valor Agregado"
+                matTooltipPosition="below"
+                id="sobremi14"class="icon13"> info </mat-icon></td>
+              <td id="afectado47">{{ this.totalFinal2 }}<mat-icon #tooltip="matTooltip"
+                matTooltip="Es la suma de 1 Vtas S1, 2 Vtas S2 y 3 Vtas S3"
+                matTooltipPosition="below"
+                id="sobremi22"class="icon13"> info </mat-icon></td>
+              <td>-</td>
+              <td id="afectado46">{{ this.dato16 }}<mat-icon #tooltip="matTooltip"
+                matTooltip="Es la suma de Inversion S1, S2 y S3"
+                matTooltipPosition="below"
+                id="sobremi15"class="icon13"> info </mat-icon></td>
+              <td>-</td>
+              <td>{{ this.total9 }}<mat-icon #tooltip="matTooltip"
+                matTooltip="Es la suma Total de Ventas Finales y el Valor Agregado de Compras de las Familias y Compras de Bienes de Capital S2"
+                matTooltipPosition="above"
+                id="sobremi23"class="icon17"> info </mat-icon></td>
+              <td>-</td>
+            </tr>
+            <tr>
+              <th scope="row" class="rowTotal">Valor Bruto Produccion</th>
+              <td class="rowFinal3">{{ this.resultado3 }}</td>
+              <td class="rowFinal3">{{ this.resultado6 }}</td>
+              <td class="rowFinal3">{{ this.resultado9 }}</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td class="rowFinal3">{{ this.totalFinal1 }}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </mat-card>
+
+    <mat-card class="vistaUsers1">
+      <div class="barraAzul"></div>
+      <mat-card-content class="sections">
+        <div class="title2">
+          <p class="titleTable">SOLUCION 1:</p>
+          <hr />
+          <div class="titleDato">
+            <mat-card class="vistaUsers3">
+              <p>PIB<sub class="rowFinal3">G</sub> = C + I</p>
+              <p>
+                PIB<sub class="rowFinal3">G</sub> = {{ this.totalCompras }} +
+                {{ this.totalInversion }}
+              </p>
+            </mat-card>
+          </div>
+          <mat-card class="TitleResult">
+            <p>PIB<sub class="rowFinal3">G</sub> = {{ this.totalPIBG }}</p>
+          </mat-card>
+        </div>
+        <div class="title2">
+          <p class="titleTable">SOLUCION 2:</p>
+          <hr />
+          <div class="titleDato">
+            <mat-card class="vistaUsers3">
+              <p>PIB<sub class="rowFinal3">VA</sub> = VAS1 + VAS2 + VAS3</p>
+              <p>
+                PIB<sub class="rowFinal3">VA</sub> = {{ this.resultado2 }} + {{ this.resultado5 }} +
+                {{ this.resultado8 }}
+              </p>
+            </mat-card>
+          </div>
+          <mat-card class="TitleResult">
+            <p>PIB<sub class="rowFinal3">VA</sub> = {{ this.total9 }}</p>
+          </mat-card>
+        </div>
+        <div class="title2">
+          <p class="titleTable">SOLUCION 3:</p>
+          <hr />
+          <div class="titleDato">
+            <mat-card class="vistaUsers3">
+              <p>PIB<sub class="rowFinal3">Y</sub> = SyS + R + RK + BE</p>
+              <p>
+                PIB<sub class="rowFinal3">Y</sub> = {{ this.total5 }} + {{ this.total6 }} +
+                {{ this.total7 }} + {{ this.total8 }}
+              </p>
+            </mat-card>
+          </div>
+          <mat-card class="TitleResult">
+            <p>PIB<sub class="rowFinal3">Y</sub> = {{ this.totalSyS }}</p>
+          </mat-card>
+        </div>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</mat-card>

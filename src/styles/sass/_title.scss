@@ -1,0 +1,181 @@
+// @import "../../../../styles/sass/variables";
+@import '../../../src/styles/sass/variables';
+.titulo {
+  // padding-top: 12px;
+  // padding-bottom: 12px;
+  text-align: center;
+  font-weight: 900;
+  color: $colorBlanco;
+}
+.titulo1 {
+  // padding-top: 12px;
+  // padding-bottom: 12px;
+  text-align: center;
+  font-weight: 900;
+  color: $colorBlanco;
+  background-color: $colorAzul;
+}
+
+.modal-header {
+  background-color: $colorAzul;
+}
+
+.colorIcons{
+  background-color: $colorAzul;
+  filter: drop-shadow(0 1px 3px #3f51b5);
+  border-radius: 4px;
+}
+
+.close {
+  color: #fff;
+}
+.alinearIconsButton {
+  display: flex;
+  align-items: center;
+  width: 75px;
+  justify-content: space-around;
+}
+.alinearIconsTableHeader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.alinearIconsTitle {
+  display: flex;
+  align-items: center;
+}
+
+.modal-footer {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#delete-confirmation {
+  display: flex;
+  padding: 15px;
+  justify-content: center;
+}
+.parrafo {
+  padding-top: 20px;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 400;
+  color: $colorAzul;
+}
+.barraRoja {
+  background-color: $colorRojo;
+  width: 100%;
+  height: 7px;
+}
+.barraAzul {
+  background-color: $colorAzul;
+  width: 100%;
+  height: 7px;
+}
+.listBarras{
+  padding-top: 14px;
+}
+.barra1 {
+  background-color: #bfc4e2;
+  width: 45%;
+  height: 7px;
+  margin: 5px 0px 5px 15px;
+}
+.barra2 {
+  background-color: #bfc4e2;
+  width: 50%;
+  height: 7px;
+      margin: 5px 0px 5px 15px;
+}
+.barra3 {
+  background-color: #bfc4e2;
+  width: 70%;
+  height: 7px;
+      margin: 5px 0px 5px 15px;
+}
+.barra4 {
+  background-color: #bfc4e2;
+  width: 20%;
+  height: 7px;
+      margin: 5px 0px 5px 15px;
+}
+.barra5 {
+  background-color: #bfc4e2;
+  width: 30%;
+  height: 7px;
+      margin: 5px 0px 5px 15px;
+}
+.icon10{
+  color: $colorAzul;
+}
+
+.partePrincipalEliminar {
+  display: flex;
+  padding: 9px 5px 20px 5px;
+  justify-content: space-between;
+}
+///////panel principal adicionar y buscar
+.presentacionPrincipal {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding-bottom: 12px;
+  align-items: center;
+}
+.definicionUsers {
+  display: flex;
+  align-items: baseline;
+  width: 70%;
+  padding-left: 40px;
+  font-weight: 500;
+}
+.presentacionLetras {
+  padding: 15px;
+}
+.definicionPrincipal {
+  display: block;
+  text-align: -webkit-center;
+}
+.vistaUsers {
+  background-color: $colorBlanco;
+  filter: drop-shadow(0 1px 3px $colorAzul);
+  width: 30%;
+  text-align: center;
+  color: $colorAzul;
+}
+.vista1 {
+  font-size: 30px;
+  font-weight: 600;
+  padding: 10px;
+}
+.vista2 {
+  font-size: 17px;
+  font-weight: 500;
+}
+.vista3 {
+  padding: 10px;
+  justify-content: center;
+  display: flex;
+}
+.btnAdicionar {
+  color: $colorBlanco;
+  background-color: $colorAzul;
+  width: 80%;
+  justify-content: center;
+  display: flex;
+}
+.modalImageDelete {
+  width: 100px;
+  height: 100px;
+}
+
+.userLogo {
+  width: 70px;
+  height: 70px;
+}
+/////////// final panel principal adicionar y buscar
+.mat-calendar-body-today:not(.mat-calendar-body-selected) {
+  border-color: rgba(0, 0, 0, 0.38);
+  background: brown;
+  color: white;
+}

@@ -1,0 +1,65 @@
+<page-header></page-header>
+<div id="panel-table">
+  <mat-card id="card-table">CALCULO DE INDICE DE PROMEDIO SIMPLE</mat-card>
+</div>
+
+<mat-card class="principal">
+  <mat-card class="vistaUsers">
+    <div class="barraAzul"></div>
+    <mat-card-header class="titleHeader">
+      <mat-card-title class="titleFont">POBLACION BOLIVIANA</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <div class="unidos">
+        <mat-card class="vistaUsers1">
+          <p class="titleTable">DATOS</p>
+          <hr />
+          <mat-form-field class="example-full-width" appearance="outline">
+            <mat-label>Año Actual</mat-label>
+            <mat-select
+              [(ngModel)]="selectedValue"
+              name="food"
+              (selectionChange)="calculoOperacion()"
+            >
+              <mat-option *ngFor="let food of foods" [value]="food.value">
+                {{ food.viewValue }}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+          <mat-form-field class="example-full-width" appearance="outline">
+            <mat-label>Año Anterior</mat-label>
+            <mat-select
+              [(ngModel)]="selectedValue1"
+              name="food1"
+              (selectionChange)="calculoOperacion()"
+            >
+              <mat-option *ngFor="let food1 of foods1" [value]="food1.value1">
+                {{ food1.viewValue1 }}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+        </mat-card>
+        <mat-card class="vistaUsers1">
+          <p class="titleTable">SOLUCION</p>
+          <hr />
+          <div class="titleDato">
+            <mat-card class="vistaUsers2">
+              <p>
+                I<sub>PJ</sub> = P <sub>{{ this.anio1 }} </sub> / P <sub>{{ this.anio2 }} </sub>
+              </p>
+              <p>
+                I<sub>PJ</sub> = ( {{ this.selectedValue }} / {{ this.selectedValue1 }} ) x 100%
+              </p>
+            </mat-card>
+            <mat-card class="TitleResult">
+              <p>I<sub>PJ</sub> = {{ this.resultado2 }} %</p>
+            </mat-card>
+
+            <p class="title3">La poblacion Boliviana crecio en: {{ this.resultado2 }} % - 100 % = {{ this.final }} %</p>
+          </div>
+        </mat-card>
+      </div>
+    </mat-card-content>
+  </mat-card>
+</mat-card>
+<!-- (selectionChange)="getDataRoles($event.value)" -->

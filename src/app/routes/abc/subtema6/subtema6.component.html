@@ -1,0 +1,454 @@
+<page-header></page-header>
+<div id="panel-table">
+  <mat-card id="card-table">PIB nominal, PIB real y Deflactor</mat-card>
+</div>
+<mat-card class="principal">
+  <mat-card class="vistaUsers3">
+    <p>Sea un Pais en que solo se produce mantequilla y pan de acuerdo a los datos siguientes:</p>
+    <p>
+      a) El PIB<sub>nominal</sub>, PIB<sub>real</sub> y el deflactor de PIB para cada año tomando
+      2018 como año base.
+    </p>
+    <p>
+      b) Las tasas de creciente del PIB<sub>nominal</sub>y del PIB<sub>real</sub> y la tasa de
+      inflacion en los años 2018 y 2019.
+    </p>
+    <p>c) Explique los resultados obtenidos</p>
+  </mat-card>
+  <div class="unidos">
+    <mat-card class="vistaUsers">
+      <div class="barraAzul"></div>
+      <mat-card-content>
+        <p class="titleTable">2017</p>
+        <hr />
+
+        <div class="variables">
+          <mat-card class="card-table1"> Mantequilla </mat-card>
+          <mat-form-field class=".example-full-width" appearance="outline">
+            <mat-label>Precio</mat-label>
+            <input matInput type="number" [(ngModel)]="this.dato1" (keyup)="sumas()" />
+            <!-- <mat-error *ngIf="dataForm.controls['names'].hasError('required')">
+            <strong>{{ 'menu.usuarios.error.names' | translate }}</strong>
+          </mat-error> -->
+          </mat-form-field>
+
+          <mat-form-field class=".example-full-width" appearance="outline">
+            <mat-label>Produccion</mat-label>
+            <input matInput type="number" [(ngModel)]="this.dato2" (keyup)="sumas()" />
+            <!-- <mat-error *ngIf="dataForm.controls['names'].hasError('required')">
+            <strong>{{ 'menu.usuarios.error.names' | translate }}</strong>
+          </mat-error> -->
+          </mat-form-field>
+
+          <mat-card class="card-table1"> Pan </mat-card>
+          <mat-form-field appearance="outline">
+            <mat-label>Precio</mat-label>
+            <input
+              matInput
+              type="number"
+              [(ngModel)]="this.dato3"
+              class=".example-full-width"
+              (keyup)="sumas()"
+            />
+            <!-- <mat-error *ngIf="dataForm.controls['names'].hasError('required')">
+            <strong>{{ 'menu.usuarios.error.names' | translate }}</strong>
+          </mat-error> -->
+          </mat-form-field>
+
+          <mat-form-field appearance="outline">
+            <mat-label>Produccion</mat-label>
+            <input
+              matInput
+              type="number"
+              [(ngModel)]="this.dato4"
+              class=".example-full-width"
+              (keyup)="sumas()"
+            />
+            <!-- <mat-error *ngIf="dataForm.controls['names'].hasError('required')">
+            <strong>{{ 'menu.usuarios.error.names' | translate }}</strong>
+          </mat-error> -->
+          </mat-form-field>
+        </div>
+      </mat-card-content>
+    </mat-card>
+
+    <mat-card class="vistaUsers">
+      <div class="barraAzul"></div>
+      <mat-card-content>
+        <p class="titleTable">2018</p>
+        <hr />
+
+        <div class="variables">
+          <mat-card class="card-table1"> Mantequilla </mat-card>
+          <mat-form-field class=".example-full-width" appearance="outline">
+            <mat-label>Precio</mat-label>
+            <input matInput type="number" [(ngModel)]="this.dato5" (keyup)="sumas()" />
+            <!-- <mat-error *ngIf="dataForm.controls['names'].hasError('required')">
+            <strong>{{ 'menu.usuarios.error.names' | translate }}</strong>
+          </mat-error> -->
+          </mat-form-field>
+
+          <mat-form-field class=".example-full-width" appearance="outline">
+            <mat-label>Produccion</mat-label>
+            <input matInput type="number" [(ngModel)]="this.dato6" (keyup)="sumas()" />
+            <!-- <mat-error *ngIf="dataForm.controls['names'].hasError('required')">
+            <strong>{{ 'menu.usuarios.error.names' | translate }}</strong>
+          </mat-error> -->
+          </mat-form-field>
+
+          <mat-card class="card-table1"> Pan </mat-card>
+          <mat-form-field appearance="outline">
+            <mat-label>Precio</mat-label>
+            <input
+              matInput
+              type="number"
+              [(ngModel)]="this.dato7"
+              class=".example-full-width"
+              (keyup)="sumas()"
+            />
+            <!-- <mat-error *ngIf="dataForm.controls['names'].hasError('required')">
+            <strong>{{ 'menu.usuarios.error.names' | translate }}</strong>
+          </mat-error> -->
+          </mat-form-field>
+
+          <mat-form-field appearance="outline">
+            <mat-label>Produccion</mat-label>
+            <input
+              matInput
+              type="number"
+              [(ngModel)]="this.dato8"
+              class=".example-full-width"
+              (keyup)="sumas()"
+            />
+            <!-- <mat-error *ngIf="dataForm.controls['names'].hasError('required')">
+            <strong>{{ 'menu.usuarios.error.names' | translate }}</strong>
+          </mat-error> -->
+          </mat-form-field>
+        </div>
+      </mat-card-content>
+    </mat-card>
+
+    <mat-card class="vistaUsers">
+      <div class="barraAzul"></div>
+      <mat-card-content>
+        <p class="titleTable">2019</p>
+        <hr />
+
+        <div class="variables">
+          <mat-card class="card-table1"> Mantequilla </mat-card>
+          <mat-form-field class=".example-full-width" appearance="outline">
+            <mat-label>Precio</mat-label>
+            <input matInput type="number" [(ngModel)]="this.dato9" (keyup)="sumas()" />
+            <!-- <mat-error *ngIf="dataForm.controls['names'].hasError('required')">
+            <strong>{{ 'menu.usuarios.error.names' | translate }}</strong>
+          </mat-error> -->
+          </mat-form-field>
+
+          <mat-form-field class=".example-full-width" appearance="outline">
+            <mat-label>Produccion</mat-label>
+            <input matInput type="number" [(ngModel)]="this.dato10" (keyup)="sumas()" />
+            <!-- <mat-error *ngIf="dataForm.controls['names'].hasError('required')">
+            <strong>{{ 'menu.usuarios.error.names' | translate }}</strong>
+          </mat-error> -->
+          </mat-form-field>
+
+          <mat-card class="card-table1"> Pan </mat-card>
+          <mat-form-field appearance="outline">
+            <mat-label>Precio</mat-label>
+            <input
+              matInput
+              type="number"
+              [(ngModel)]="this.dato11"
+              class=".example-full-width"
+              (keyup)="sumas()"
+            />
+            <!-- <mat-error *ngIf="dataForm.controls['names'].hasError('required')">
+            <strong>{{ 'menu.usuarios.error.names' | translate }}</strong>
+          </mat-error> -->
+          </mat-form-field>
+
+          <mat-form-field appearance="outline">
+            <mat-label>Produccion</mat-label>
+            <input
+              matInput
+              type="number"
+              [(ngModel)]="this.dato12"
+              class=".example-full-width"
+              (keyup)="sumas()"
+            />
+            <!-- <mat-error *ngIf="dataForm.controls['names'].hasError('required')">
+            <strong>{{ 'menu.usuarios.error.names' | translate }}</strong>
+          </mat-error> -->
+          </mat-form-field>
+        </div>
+      </mat-card-content>
+    </mat-card>
+  </div>
+  <div id="panel-table">
+    <mat-card id="card-table2"
+      >CUADRO DE PIB
+      <mat-form-field class="example-full-width1" appearance="outline">
+        <mat-label>Año Base</mat-label>
+        <mat-select [(ngModel)]="selectedValue" name="food" (selectionChange)="sumas()">
+          <mat-option *ngFor="let food of foods" [value]="food.value">
+            {{ food.viewValue }}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+    </mat-card>
+  </div>
+  <mat-card class="vistaUsers1">
+    <div class="table-responsive">
+      <table class="table">
+        <thead>
+          <tr>
+            <td colspan="8" scope="row" class="rowTop"></td>
+          </tr>
+          <tr>
+            <th scope="col" class="rowFinal1"></th>
+            <th colspan="2" class="rowFinal1">Mantequilla</th>
+            <th colspan="2" class="rowFinal1">Pan</th>
+            <th scope="col" class="rowFinal1"></th>
+            <th scope="col" class="rowFinal1"></th>
+            <th scope="col" class="rowFinal1"></th>
+          </tr>
+          <tr>
+            <th scope="col" class="rowTotal"></th>
+            <th scope="col" class="rowTotal">Precio</th>
+            <th scope="col" class="rowTotal">Producto</th>
+            <th scope="col" class="rowTotal">Precio</th>
+            <th scope="col" class="rowTotal">Producto</th>
+            <th scope="col" class="rowTotal">PIB Nominal</th>
+            <th scope="col" class="rowTotal">PIB Real</th>
+            <th scope="col" class="rowTotal">Def</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row" class="rowTotal">2017</th>
+            <td id="afectado0">{{ this.dato1 }}</td>
+            <td id="afectado1">{{ this.dato2 }}</td>
+            <td id="afectado2">{{ this.dato3 }}</td>
+            <td id="afectado3">{{ this.dato4 }}</td>
+            <td id="afectado12">
+              {{ this.resultado1
+              }}<mat-icon
+                #tooltip="matTooltip"
+                matTooltip="Es el resultado de:
+              {{ this.dato1 }} x {{ this.dato2 }} + {{ this.dato3 }} x {{ this.dato4 }}"
+                matTooltipPosition="above"
+                id="sobremi0"
+                class="icon1"
+              >
+                info
+              </mat-icon>
+            </td>
+            <td id="afectado13">
+              {{ this.resultado4
+              }}<mat-icon
+                #tooltip="matTooltip"
+                matTooltip="Es el resultado de:
+              {{ this.mensaje1 }} x {{ this.dato2 }} + {{ this.mensaje2 }} x {{ this.dato4 }}"
+                matTooltipPosition="above"
+                id="sobremi3"
+                class="icon2"
+              >
+                info
+              </mat-icon>
+            </td>
+            <td>
+              {{ this.resultado7
+              }}<mat-icon
+                #tooltip="matTooltip"
+                matTooltip="Es el resultado de: {{ this.resultado1 }} / {{ this.resultado4 }} x 100"
+                matTooltipPosition="above"
+                id="sobremi6"
+                class="icon3"
+              >
+                info
+              </mat-icon>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row" class="rowTotal">2018</th>
+            <td id="afectado4">{{ this.dato5 }}</td>
+            <td id="afectado5">{{ this.dato6 }}</td>
+            <td id="afectado6">{{ this.dato7 }}</td>
+            <td id="afectado7">{{ this.dato8 }}</td>
+            <td id="afectado14">
+              {{ this.resultado2
+              }}<mat-icon
+                #tooltip="matTooltip"
+                matTooltip="Es el resultado de:
+              {{ this.dato5 }} x {{ this.dato6 }} + {{ this.dato7 }} x {{ this.dato8 }}"
+                matTooltipPosition="above"
+                id="sobremi1"
+                class="icon1"
+              >
+                info
+              </mat-icon>
+            </td>
+            <td id="afectado15">
+              {{ this.resultado5
+              }}<mat-icon
+                #tooltip="matTooltip"
+                matTooltip="Es el resultado de:
+              {{ this.mensaje1 }} x {{ this.dato6 }} + {{ this.mensaje2 }} x {{ this.dato8 }}"
+                matTooltipPosition="above"
+                id="sobremi4"
+                class="icon2"
+              >
+                info
+              </mat-icon>
+            </td>
+            <td>
+              {{ this.resultado8
+              }}<mat-icon
+                #tooltip="matTooltip"
+                matTooltip="Es el resultado de: {{ this.resultado2 }} / {{ this.resultado5 }} x 100"
+                matTooltipPosition="above"
+                id="sobremi7"
+                class="icon3"
+              >
+                info
+              </mat-icon>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row" class="rowTotal">2019</th>
+            <td id="afectado8">{{ this.dato9 }}</td>
+            <td id="afectado9">{{ this.dato10 }}</td>
+            <td id="afectado10">{{ this.dato11 }}</td>
+            <td id="afectado11">{{ this.dato12 }}</td>
+            <td id="afectado16">
+              {{ this.resultado3
+              }}<mat-icon
+                #tooltip="matTooltip"
+                matTooltip="Es el resultado de:
+              {{ this.dato9 }} x {{ this.dato10 }} + {{ this.dato11 }} x {{ this.dato12 }}"
+                matTooltipPosition="above"
+                id="sobremi2"
+                class="icon1"
+              >
+                info
+              </mat-icon>
+            </td>
+            <td id="afectado17">
+              {{ this.resultado6
+              }}<mat-icon
+                #tooltip="matTooltip"
+                matTooltip="Es el resultado de:
+              {{ this.mensaje1 }} x {{ this.dato10 }} + {{ this.mensaje2 }} x {{ this.dato12 }}"
+                matTooltipPosition="above"
+                id="sobremi5"
+                class="icon2"
+              >
+                info
+              </mat-icon>
+            </td>
+            <td>
+              {{ this.resultado9
+              }}<mat-icon
+                #tooltip="matTooltip"
+                matTooltip="Es el resultado de: {{ this.resultado3 }} / {{ this.resultado6 }} x 100"
+                matTooltipPosition="above"
+                id="sobremi8"
+                class="icon3"
+              >
+                info
+              </mat-icon>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </mat-card>
+
+  <mat-card class="vistaUsers1">
+    <mat-accordion>
+      <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            <p class="titleTable">SOLUCION INCREMENTO PIB <sub>nominal</sub></p>
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+
+        <div class="titleDato">
+          <mat-card class="vistaUsers2">
+            <br />
+            <br />
+            <p>
+              ΔPIB nominal <sub>(reciente - antiguo)</sub> = (( PIB<sub>mas reciente</sub> - PIB
+              <sub>mas antiguo</sub> / PIB <sub>mas antiguo</sub>) x 100
+            </p>
+            <p>
+              ΔPIB nominal <sub>(2017 - 2018)</sub> = (( {{ this.resultado2 }} -
+              {{ this.resultado1 }})/ {{ this.resultado1 }}) x 100 = {{ this.resultado10 }} %
+            </p>
+            <p>
+              ΔPIB nominal <sub>(2018 - 2019)</sub> = (( {{ this.resultado3 }} -
+              {{ this.resultado2 }})/ {{ this.resultado2 }}) x 100 = {{ this.resultado11 }} %
+            </p>
+          </mat-card>
+        </div>
+      </mat-expansion-panel>
+    </mat-accordion>
+  </mat-card>
+
+  <mat-card class="vistaUsers1">
+    <mat-accordion>
+      <mat-expansion-panel (opened)="panelOpenState1 = true" (closed)="panelOpenState1 = false">
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            <p class="titleTable">SOLUCION INCREMENTO PIB <sub>real</sub></p></mat-panel-title
+          >
+        </mat-expansion-panel-header>
+        <div class="titleDato">
+          <mat-card class="vistaUsers2">
+            <p>
+              ΔPIB real <sub>(reciente - antiguo)</sub> = (( PIB<sub>mas reciente</sub> - PIB
+              <sub>mas antiguo</sub> / PIB <sub>mas antiguo</sub>) x 100
+            </p>
+            <p>
+              ΔPIB real <sub>(2017 - 2018)</sub> = (( {{ this.resultado5 }} -
+              {{ this.resultado4 }})/ {{ this.resultado4 }}) x 100 = {{ this.resultado12 }} %
+            </p>
+            <p>
+              ΔPIB real <sub>(2018 - 2019)</sub> = (( {{ this.resultado6 }} -
+              {{ this.resultado5 }})/ {{ this.resultado5 }}) x 100 = {{ this.resultado13 }} %
+            </p>
+          </mat-card>
+        </div>
+      </mat-expansion-panel>
+    </mat-accordion>
+  </mat-card>
+
+  <mat-card class="vistaUsers1">
+    <mat-accordion>
+      <mat-expansion-panel (opened)="panelOpenState2 = true" (closed)="panelOpenState2 = false">
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            <p class="titleTable">SOLUCION INCREMENTO DEFLACION PIB</p>
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+
+        <div class="titleDato">
+          <mat-card class="vistaUsers2">
+            <p>
+              ΔDef PIB <sub>(reciente - antiguo)</sub> = (( PIB<sub>mas reciente</sub> - PIB
+              <sub>mas antiguo</sub> / PIB <sub>mas antiguo</sub>) x 100
+            </p>
+            <p>
+              ΔDef PIB <sub>(2017 - 2018)</sub> = (( {{ this.resultado8 }} - {{ this.resultado7 }})/
+              {{ this.resultado7 }}) x 100 = {{ this.resultado14 }} %
+            </p>
+            <p>
+              ΔDef PIB <sub>(2018 - 2019)</sub> = (( {{ this.resultado9 }} - {{ this.resultado8 }})/
+              {{ this.resultado8 }}) x 100 = {{ this.resultado15 }} %
+            </p>
+          </mat-card>
+        </div>
+      </mat-expansion-panel>
+    </mat-accordion>
+  </mat-card>
+</mat-card>

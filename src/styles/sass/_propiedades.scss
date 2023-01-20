@@ -1,0 +1,123 @@
+@import '../../styles/sass/variables';
+
+.uni {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 8px;
+}
+.unidos {
+  display: flex;
+}
+
+// propiedades de calendar
+::ng-deep .mat-calendar-body-today:not(.mat-calendar-body-selected) {
+  //border-color: rgba(0, 0, 0, 0.38);
+  background: $colorAzul !important;
+  color: $colorBlanco !important;
+}
+
+::ng-deep .cdk-overlay-pane {
+  filter: drop-shadow(0 1px 3px $colorAzul)!important;
+}
+// propiedades de tabla
+.example-container {
+  width: 100%;
+  max-width: 100%;
+  overflow: auto;
+}
+
+table {
+  width: 800px;
+}
+#card-table {
+  width: 100%;
+  background-color: $colorAzul;
+  height: 90px;
+  margin-top: -40px !important;
+  margin-bottom: 20px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  align-content: flex-start;
+  display: flex !important;
+  color: $colorBlanco;
+  font-size: 20px;
+  font-weight: 700;
+  top: 20px;
+}
+#panel-table {
+  position: relative;
+  width: 100%;
+  overflow: visible;
+  padding-left: 5%;
+  padding-right: 5%;
+  margin-bottom: -74px;
+  margin-top: 28px;
+  z-index: 2;
+}
+th.mat-header-cell {
+  text-align: center;
+  background: $colorBlanco;
+  color: $colorAzul;
+  font-size: 14px;
+  padding-top: 79px;
+  padding-bottom: 16px;
+  font-weight: 600;
+  align-content: center;
+}
+
+::ng-deep .mat-table thead,
+.mat-table tbody,
+.mat-table tfoot,
+mat-header-row,
+mat-row,
+mat-footer-row,
+[mat-header-row],
+[mat-row],
+[mat-footer-row],
+.mat-table-sticky {
+  background: inherit !important;
+  text-align: center !important;
+}
+
+::ng-deep .mat-select-value {
+  display: table-cell !important;
+  max-width: 0 !important;
+  width: 100% !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  white-space: nowrap !important;
+  color: $colorAzul !important;
+  background: $colorBlanco !important;
+  text-align: center !important;
+  font-size: 14px !important;
+  height: 16px !important;
+}
+
+::ng-deep .mat-paginator-container {
+  background: $colorAzul !important;
+  color: $colorBlanco !important;
+  font-weight: 500 !important;
+}
+
+::ng-deep .mat-sort-header-container {
+  display: flex !important;
+  justify-content: center !important;
+  font-size: 14px !important;
+}
+
+::ng-deep .mat-sort-header-arrow,
+[dir='rtl'] .mat-sort-header-position-before .mat-sort-header-arrow {
+  margin: 0 0 0 6px !important;
+  color: $colorAzul !important;
+}
+// fin tabla
+// propiedades de tooltip
+::ng-deep .mat-tooltip {
+  color: $colorNegro !important;
+  background-color: $colorBlanco !important;
+  text-align: center !important;
+  filter: drop-shadow(0 1px 3px $colorNegro) !important;
+}
+// fin tooltip

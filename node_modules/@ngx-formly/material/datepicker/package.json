@@ -1,0 +1,10 @@
+{
+  "module": "../fesm2015/ngx-formly-material-datepicker.mjs",
+  "es2020": "../fesm2020/ngx-formly-material-datepicker.mjs",
+  "esm2020": "../esm2020/datepicker/ngx-formly-material-datepicker.mjs",
+  "fesm2020": "../fesm2020/ngx-formly-material-datepicker.mjs",
+  "fesm2015": "../fesm2015/ngx-formly-material-datepicker.mjs",
+  "typings": "ngx-formly-material-datepicker.d.ts",
+  "sideEffects": false,
+  "name": "@ngx-formly/material/datepicker"
+}

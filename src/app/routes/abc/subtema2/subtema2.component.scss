@@ -1,0 +1,353 @@
+@import '../../../../styles/sass/variables';
+@import '../../../../styles/sass/title';
+@import '../../../../styles/sass/mixin';
+@import '../../../../styles/sass/propiedades';
+
+.example-full-width {
+  @include decoration(50%, 14%, small, 5px, 5px);
+
+  input {
+    @include textoMayuscula(uppercase);
+  }
+  .emailInput {
+    @include textoMayuscula(none);
+  }
+}
+
+/////////////////Titulo principal////////////
+
+.principal {
+  top: 20px;
+}
+
+.unidos {
+  display: flex;
+  justify-content: center;
+  margin-top: 72px;
+}
+
+///////////// Table //////////
+
+.vistaUsers,
+.vistaUsers1 {
+  background-color: $colorBlanco;
+  filter: drop-shadow(0 1px 3px $colorAzul);
+  width: 98%;
+  text-align: center;
+  color: $colorAzul;
+  margin-left: 10px;
+  margin-right: 10px;
+  display: block;
+}
+
+.vistaUsers1 {
+  top: 25px;
+}
+
+.vistaUsers3 {
+  background-color: $colorBlanco;
+  filter: drop-shadow(0 1px 3px $colorNegro);
+  width: 230px;
+  text-align: center;
+  color: $colorNegro;
+  margin-left: 10px;
+  display: block;
+}
+.rowTop {
+  height: 60px;
+  background: #05193e;
+}
+
+.titleHeader {
+  justify-content: right;
+}
+
+.titleFont {
+  font-size: small;
+  color: $colorRojo;
+  font-weight: 600;
+}
+
+.titleTable {
+  color: $colorRojo;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+#card-table2 {
+  width: 100%;
+  background-color: $colorBlanco;
+  height: 90px;
+  margin-top: -40px !important;
+  margin-bottom: 20px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  align-content: flex-start;
+  display: flex !important;
+  color: $colorNegro;
+  font-size: 20px;
+  font-weight: 700;
+  top: 20px;
+  filter: drop-shadow(0 1px 3px $colorNegro);
+}
+
+.card-table1 {
+  width: 100%;
+  background-color: $colorBlanco;
+  height: 40px;
+  justify-content: center;
+  align-content: flex-start;
+  color: $colorNegro;
+  font-size: 14px;
+  font-weight: 600;
+  filter: drop-shadow(0 1px 3px $colorNegro);
+}
+
+.variables {
+  display: block;
+  width: 100%;
+}
+/////////////////table datos//////////////
+.table-responsive {
+  text-align: center;
+  font-size: 12px;
+  justify-content: center;
+}
+.table {
+  width: 100% !important;
+}
+
+.rowTotal {
+  background-color: #05193e;
+  color: $colorBlanco;
+}
+.rowFinal {
+  background-color: $colorBlanco;
+  color: $colorNegro;
+}
+.rowFinal1 {
+  color: #f3db07;
+  font-size: 14px;
+  font-weight: 700;
+  background: #05193e;
+}
+.rowFinal2 {
+  color: #05193e;
+  padding: 0 !important;
+}
+.rowFinal3, #afectado37, #afectado38, #afectado39{
+  color: $colorRojo;
+}
+////////////////////
+.sections {
+  display: flex;
+  padding-left: 5px;
+  padding-right: 5px;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.title2 {
+  color: $colorNegro;
+  display: block;
+  text-align: center;
+}
+
+.TitleResult {
+  background-color: $colorBlanco;
+  filter: drop-shadow(0 1px 3px $colorNegro);
+  width: 100px;
+  display: inline-flex;
+  color: $colorNegro;
+  font-weight: bold;
+  filter: drop-shadow(0 1px 3px $colorNegro);
+}
+
+// .afectado {
+//   background-color: #460000;
+//   color: #fff;
+// }
+
+.afectadoFinal {
+  background-color: $colorAzul;
+  color: #fff;
+}
+
+.afectadoFinal1 {
+  background-color: $colorNegro;
+  color: #fff;
+}
+.afectadoFinal2 {
+  background-color: #fffb00;
+  color: #000;
+}
+.afectadoFinal3 {
+  background-color: #13eb49;
+  color: #000;
+}
+.afectadoFinal4 {
+  background-color: #a80606;
+  color: #fff !important;
+}
+.afectadoFinal5 {
+  background-color: #1d6943;
+  color: #fff !important;
+}
+.afectadoFinal6 {
+  background-color: #88077d;
+  color: #fff !important;
+}
+.sobremi,
+.sobremi1,
+.sobremi2,
+.sobremi3,
+.sobremi4,
+.sobremi5,
+.sobremi6,
+.sobremi7,
+.sobremi8,
+.sobremi9,
+.sobremi10,
+.sobremi11,
+.sobremi12, .sobremi13, .sobremi14, .sobremi15, .sobremi16, .sobremi17, .sobremi18, .sobremi19 , .sobremi20 {
+  display: inline;
+  left: 124px;
+  z-index: 200;
+}
+// propiedades de tooltip
+::ng-deep .mat-tooltip {
+  color: $colorNegro !important;
+  background-color: $colorBlanco !important;
+  text-align: center !important;
+  filter: drop-shadow(0 1px 3px $colorNegro) !important;
+}
+.icon11 {
+  color: #3f51b5;
+  font-size: 20px;
+  display: inline-flex;
+}
+.icon12 {
+  color: #fcfcfc;
+  font-size: 20px;
+  display: inline-flex;
+}
+.icon13 {
+  color: #fffb00;
+  font-size: 20px;
+  display: inline-flex;
+}
+.icon14 {
+  color: #13eb49;
+  font-size: 20px;
+  display: inline-flex;
+}
+.icon15 {
+  color: #a80606;
+  font-size: 20px;
+  display: inline-flex;
+}
+.icon16 {
+  color: #1d6943;
+  font-size: 20px;
+  display: inline-flex;
+}
+.icon17 {
+  color: #88077d;
+  font-size: 20px;
+  display: inline-flex;
+}
+@media screen and (max-width: 320px) {
+  .table {
+    width: 100% !important;
+  }
+  .card-table {
+    font-size: 15px;
+    font-weight: 700;
+  }
+  .unidos {
+    display: block;
+  }
+  .vistaUsers {
+    width: 93%;
+  }
+  .sections {
+    display: grid;
+  }
+  .vistaUsers2,
+  .vistaUsers3 {
+    font-size: 12px;
+    width: 200px;
+    display: grid;
+    align-content: space-around;
+  }
+  .titleTable {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .table {
+    width: 100% !important;
+  }
+  .card-table {
+    font-size: 15px;
+    font-weight: 700;
+  }
+  .unidos {
+    display: block;
+  }
+  .vistaUsers {
+    width: 93%;
+  }
+  .sections {
+    display: grid;
+  }
+  .vistaUsers2,
+  .vistaUsers3 {
+    display: flex;
+  }
+  .titleTable {
+    font-size: 20px;
+  }
+  .titleDato {
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 767px) {
+  .table {
+    width: 100% !important;
+  }
+  .card-table {
+    font-size: 15px;
+    font-weight: 700;
+  }
+  .unidos {
+    display: block;
+  }
+  .vistaUsers {
+    width: 97%;
+  }
+  .sections {
+    display: grid;
+  }
+  .vistaUsers2,
+  .vistaUsers3 {
+    display: flex;
+  }
+  .titleTable {
+    font-size: 20px;
+  }
+  .titleDato {
+    justify-content: center;
+  }
+  .variables {
+    display: grid;
+  }
+  .vistaUsers1 {
+    width: 97%;
+  }
+}
+@media screen and (min-width: 992px) {
+  .table {
+    width: 100% !important;
+  }
+}

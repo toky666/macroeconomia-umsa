@@ -1,0 +1,10 @@
+{
+  "module": "../fesm2015/ngx-formly-material-checkbox.mjs",
+  "es2020": "../fesm2020/ngx-formly-material-checkbox.mjs",
+  "esm2020": "../esm2020/checkbox/ngx-formly-material-checkbox.mjs",
+  "fesm2020": "../fesm2020/ngx-formly-material-checkbox.mjs",
+  "fesm2015": "../fesm2015/ngx-formly-material-checkbox.mjs",
+  "typings": "ngx-formly-material-checkbox.d.ts",
+  "sideEffects": false,
+  "name": "@ngx-formly/material/checkbox"
+}

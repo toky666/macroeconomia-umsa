@@ -1,0 +1,314 @@
+<page-header></page-header>
+
+<div id="panel-table">
+  <mat-card id="card-table">CALCULO DE INDICE PROMEDIO SIMPLE</mat-card>
+</div>
+
+<mat-card class="principal">
+  <mat-card class="vistaUsers3">
+    <p>
+      Calcular el indice promedio simple de los precios para 6 productos que incluyen lacteos,
+      huevos, aceites y grasas del año 2019 con relacion al año 2017 basado en el informe de precios
+      al consumidor del BCH de junio.
+    </p>
+  </mat-card>
+
+  <div class="unidos">
+    <mat-card class="vistaUsers">
+      <div class="barraAzul"></div>
+      <mat-card-content>
+        <p class="titleTable">Huevos de Gallina</p>
+        <hr />
+        <div class="variables">
+          <mat-form-field appearance="outline">
+            <mat-label>2017</mat-label>
+            <input
+              matInput
+              type="number"
+              [(ngModel)]="this.dato1"
+              class=".example-full-width"
+              (keyup)="sumas()"
+            />
+            <span matTextSuffix>Bs.</span>
+            <!-- <mat-error *ngIf="dataForm.controls['names'].hasError('required')">
+            <strong>{{ 'menu.usuarios.error.names' | translate }}</strong>
+          </mat-error> -->
+          </mat-form-field>
+
+          <mat-form-field appearance="outline">
+            <mat-label>2018</mat-label>
+            <input
+              matInput
+              type="number"
+              [(ngModel)]="this.dato2"
+              class=".example-full-width"
+              (keyup)="sumas()"
+            />
+            <span matTextSuffix>Bs.</span>
+            <!-- <mat-error *ngIf="dataForm.controls['names'].hasError('required')">
+            <strong>{{ 'menu.usuarios.error.names' | translate }}</strong>
+          </mat-error> -->
+          </mat-form-field>
+        </div>
+
+        <p class="titleTable">Leche en Polvo</p>
+        <hr />
+        <div class="variables">
+          <mat-form-field appearance="outline">
+            <mat-label>2017</mat-label>
+            <input
+              matInput
+              type="number"
+              [(ngModel)]="this.dato3"
+              class=".example-full-width"
+              (keyup)="sumas()"
+            />
+            <span matTextSuffix>Bs.</span>
+            <!-- <mat-error *ngIf="dataForm.controls['names'].hasError('required')">
+            <strong>{{ 'menu.usuarios.error.names' | translate }}</strong>
+          </mat-error> -->
+          </mat-form-field>
+
+          <mat-form-field appearance="outline">
+            <mat-label>2018</mat-label>
+            <input
+              matInput
+              type="number"
+              [(ngModel)]="this.dato4"
+              class=".example-full-width"
+              (keyup)="sumas()"
+            />
+            <span matTextSuffix>Bs.</span>
+            <!-- <mat-error *ngIf="dataForm.controls['names'].hasError('required')">
+            <strong>{{ 'menu.usuarios.error.names' | translate }}</strong>
+          </mat-error> -->
+          </mat-form-field>
+        </div>
+      </mat-card-content>
+    </mat-card>
+
+    <mat-card class="vistaUsers">
+      <div class="barraAzul"></div>
+      <mat-card-content>
+        <p class="titleTable">Leche Pasteurisada</p>
+        <hr />
+        <div class="variables">
+          <mat-form-field appearance="outline">
+            <mat-label>2017</mat-label>
+            <input
+              matInput
+              type="number"
+              [(ngModel)]="this.dato5"
+              class=".example-full-width"
+              (keyup)="sumas()"
+            />
+            <span matTextSuffix>Bs.</span>
+            <!-- <mat-error *ngIf="dataForm.controls['names'].hasError('required')">
+            <strong>{{ 'menu.usuarios.error.names' | translate }}</strong>
+          </mat-error> -->
+          </mat-form-field>
+
+          <mat-form-field appearance="outline">
+            <mat-label>2018</mat-label>
+            <input
+              matInput
+              type="number"
+              [(ngModel)]="this.dato6"
+              class=".example-full-width"
+              (keyup)="sumas()"
+            />
+            <span matTextSuffix>Bs.</span>
+            <!-- <mat-error *ngIf="dataForm.controls['names'].hasError('required')">
+            <strong>{{ 'menu.usuarios.error.names' | translate }}</strong>
+          </mat-error> -->
+          </mat-form-field>
+        </div>
+        <p class="titleTable">Queso</p>
+        <hr />
+        <div class="variables">
+          <mat-form-field appearance="outline">
+            <mat-label>2017</mat-label>
+            <input
+              matInput
+              type="number"
+              [(ngModel)]="this.dato7"
+              class=".example-full-width"
+              (keyup)="sumas()"
+            />
+            <span matTextSuffix>Bs.</span>
+            <!-- <mat-error *ngIf="dataForm.controls['names'].hasError('required')">
+            <strong>{{ 'menu.usuarios.error.names' | translate }}</strong>
+          </mat-error> -->
+          </mat-form-field>
+
+          <mat-form-field appearance="outline">
+            <mat-label>2018</mat-label>
+            <input
+              matInput
+              type="number"
+              [(ngModel)]="this.dato8"
+              class=".example-full-width"
+              (keyup)="sumas()"
+            />
+            <span matTextSuffix>Bs.</span>
+            <!-- <mat-error *ngIf="dataFrm.controls['names'].hasError('required')">
+            <strong>{{ 'menu.usuarios.error.names' | translate }}</strong>
+          </mat-error> -->
+          </mat-form-field>
+        </div>
+      </mat-card-content>
+    </mat-card>
+
+    <mat-card class="vistaUsers">
+      <div class="barraAzul"></div>
+      <mat-card-content>
+        <p class="titleTable">Aceite Vegetal</p>
+        <hr />
+        <div class="variables">
+          <mat-form-field appearance="outline">
+            <mat-label>2017</mat-label>
+            <input
+              matInput
+              type="number"
+              [(ngModel)]="this.dato9"
+              class=".example-full-width"
+              (keyup)="sumas()"
+            />
+            <span matTextSuffix>Bs.</span>
+            <!-- <mat-error *ngIf="dataForm.controls['names'].hasError('required')">
+            <strong>{{ 'menu.usuarios.error.names' | translate }}</strong>
+          </mat-error> -->
+          </mat-form-field>
+
+          <mat-form-field appearance="outline">
+            <mat-label>2018</mat-label>
+            <input
+              matInput
+              type="number"
+              [(ngModel)]="this.dato10"
+              class=".example-full-width"
+              (keyup)="sumas()"
+            />
+            <span matTextSuffix>Bs.</span>
+            <!-- <mat-error *ngIf="dataForm.controls['names'].hasError('required')">
+            <strong>{{ 'menu.usuarios.error.names' | translate }}</strong>
+          </mat-error> -->
+          </mat-form-field>
+        </div>
+
+        <p class="titleTable">Manteca Vegetal</p>
+        <hr />
+        <div class="variables">
+          <mat-form-field appearance="outline">
+            <mat-label>2017</mat-label>
+            <input
+              matInput
+              type="number"
+              [(ngModel)]="this.dato11"
+              class=".example-full-width"
+              (keyup)="sumas()"
+            />
+            <span matTextSuffix>Bs.</span>
+            <!-- <mat-error *ngIf="dataForm.controls['names'].hasError('required')">
+            <strong>{{ 'menu.usuarios.error.names' | translate }}</strong>
+          </mat-error> -->
+          </mat-form-field>
+
+          <mat-form-field appearance="outline">
+            <mat-label>2018</mat-label>
+            <input
+              matInput
+              type="number"
+              [(ngModel)]="this.dato12"
+              class=".example-full-width"
+              (keyup)="sumas()"
+            />
+            <span matTextSuffix>Bs.</span>
+            <!-- <mat-error *ngIf="dataForm.controls['names'].hasError('required')">
+            <strong>{{ 'menu.usuarios.error.names' | translate }}</strong>
+          </mat-error> -->
+          </mat-form-field>
+        </div>
+      </mat-card-content>
+    </mat-card>
+  </div>
+  <div id="panel-table">
+    <mat-card id="card-table2">CUADRO DE PRODUCTO</mat-card>
+  </div>
+  <div>
+    <mat-card class="vistaUsers1">
+      <div class="table-responsive">
+        <table class="table">
+          <thead>
+            <tr>
+              <td colspan="4" scope="row" class="rowTop"></td>
+            </tr>
+            <tr>
+              <th scope="col" class="rowFinal1">Producto</th>
+              <th scope="col" class="rowFinal1">2017</th>
+              <th scope="col" class="rowFinal1">2018</th>
+              <th scope="col" class="rowFinal1">Indice Simple</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row" class="rowTotal">Huevos de Gallina</th>
+              <td>{{ this.dato1 }}</td>
+              <td>{{ this.dato2 }}</td>
+              <td>{{ this.resultado1 }} %</td>
+            </tr>
+            <tr>
+              <th scope="row" class="rowTotal">Leche en Polvo</th>
+              <td>{{ this.dato3 }}</td>
+              <td>{{ this.dato4 }}</td>
+              <td>{{ this.resultado2 }} %</td>
+            </tr>
+            <tr>
+              <th scope="row" class="rowTotal">Leche Pasteurizada</th>
+              <td>{{ this.dato5 }}</td>
+              <td>{{ this.dato6 }}</td>
+              <td>{{ this.resultado3 }} %</td>
+            </tr>
+            <tr>
+              <th scope="row" class="rowTotal">Queso</th>
+              <td>{{ this.dato7 }}</td>
+              <td>{{ this.dato8 }}</td>
+              <td>{{ this.resultado4 }} %</td>
+            </tr>
+            <tr>
+              <th scope="row" class="rowTotal">Haceite Vegetal</th>
+              <td>{{ this.dato9 }}</td>
+              <td>{{ this.dato10 }}</td>
+              <td>{{ this.resultado5 }} %</td>
+            </tr>
+            <tr>
+              <th scope="row" class="rowTotal">Manteca Vegetal</th>
+              <td>{{ this.dato11 }}</td>
+              <td>{{ this.dato12 }}</td>
+              <td>{{ this.resultado6 }} %</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </mat-card>
+    <mat-card class="vistaUsers1">
+      <p class="titleTable">SOLUCION</p>
+      <hr />
+      <div class="titleDato">
+        <mat-card class="vistaUsers2">
+          <p>
+            I<sub>PAS</sub> = Σ P <sub>Indice Promedio Simple</sub> / n
+          </p>
+          <p>
+            I<sub>PAS</sub> = ( {{ this.resultado7 }} / 6 ) x 100%
+          </p>
+        </mat-card>
+        <mat-card class="TitleResult">
+          <p>I<sub>PAS</sub> = {{ this.resultado8 }} %</p>
+        </mat-card>
+
+        <p class="title3">Los precios de los productos en analisis incrementaran en: {{ this.resultado8 }} % - 100 % = {{ this.resultado9 }} %</p>
+      </div>
+    </mat-card>
+  </div>
+</mat-card>

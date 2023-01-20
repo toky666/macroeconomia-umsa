@@ -1,0 +1,80 @@
+{
+  "menu": [
+    {
+      "route": "dashboard",
+      "name": "dashboard",
+      "type": "link",
+      "icon": "dashboard",
+      "badge": {
+        "color": "red-500",
+        "value": "5"
+      }
+    },
+    {
+      "route": "abc",
+      "name": "tema1",
+      "type": "sub",
+      "icon": "expand_circle_down",
+      "children": [{
+          "route": "def",
+          "name": "subtema1",
+          "type": "link",
+          "icon":"radio_button_checked"
+        },
+        {
+          "route": "subtema2",
+          "name": "subtema2",
+          "type": "link",
+          "icon":"radio_button_checked"
+        },
+        {
+          "route": "subtema3",
+          "name": "subtema3",
+          "type": "link",
+          "icon":"radio_button_checked"
+        },
+        {
+          "route": "subtema4",
+          "name": "subtema4",
+          "type": "link",
+          "icon":"radio_button_checked"
+        },
+        {
+          "route": "subtema5",
+          "name": "subtema5",
+          "type": "link",
+          "icon":"radio_button_checked"
+        },
+        {
+          "route": "subtema6",
+          "name": "subtema6",
+          "type": "link",
+          "icon":"radio_button_checked"
+        }
+      ]
+    },
+    {
+      "route": "/",
+      "name": "sessions",
+      "type": "sub",
+      "icon": "question_answer",
+      "children": [
+        {
+          "route": "403",
+          "name": "403",
+          "type": "link"
+        },
+        {
+          "route": "404",
+          "name": "404",
+          "type": "link"
+        },
+        {
+          "route": "500",
+          "name": "500",
+          "type": "link"
+        }
+      ]
+    }
+  ]
+}
